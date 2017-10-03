@@ -18,7 +18,7 @@ app.get('/getMeetings', (req, res) => {
         'type': 2,
         'page_size': 100
       };
-      setTimeout(() => {
+      return setTimeout(() => {
         zoom.dashboard.meeting(dashboard, (res3) => {
           return res3 /* .participants.map(member => {
             return member.id;
